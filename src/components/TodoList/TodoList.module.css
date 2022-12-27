@@ -1,0 +1,260 @@
+.form {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  justify-content: center;
+}
+.form button {
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+h1 {
+  color: white;
+  font-family: "BioRhyme";
+}
+.container {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 2.5%;
+}
+.container select {
+  border: none;
+  outline: none;
+  background-color: #7d8afe;
+  width: 30%;
+  height: 40px;
+  border-radius: 10px;
+  padding: 2px 10px;
+}
+.form input {
+  background-color: rgb(211, 209, 209);
+  border: none;
+  outline: none;
+  width: 70%;
+  height: 40px;
+  border-radius: 7px 0px 0px 7px;
+  font-size: larger;
+  padding: 1px;
+}
+.form button {
+  border: none;
+  outline: none;
+  width: 21%;
+  height: 42px;
+  background-color: #17b486;
+  border-radius: 0px 7px 7px 0px;
+}
+button.done {
+  background-color: #17b486;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delete {
+  background-color: #d04e59;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Todo {
+  width: 80%;
+  height: 70px;
+  background: linear-gradient(145deg, #1c2a3f, #1a273d);
+  box-shadow: 32px 32px 64px #0e1521, -32px -32px 64px #141d2d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  margin-left: 10%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+* {
+  transition: all 300ms linear;
+}
+.Todo button,
+.doneTask button {
+  border: none;
+  outline: none;
+  width: 30%;
+  height: 44px;
+  border-radius: 5px;
+  opacity: 1;
+  margin: 0px 10px;
+}
+button {
+  cursor: pointer;
+}
+.Todo div,
+.doneTask div {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+button img {
+  width: 40px;
+  height: 40px;
+}
+.footer {
+  background-color: #17b486;
+  padding: 8px 12px;
+  margin-top: 90vh;
+}
+.doneTask {
+  width: 80%;
+  height: 70px;
+  background: linear-gradient(145deg, #1c2a3f, #1a273d);
+  box-shadow: 32px 32px 64px #0e1521, -32px -32px 64px #141d2d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  margin-left: 10%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+@media screen and (min-width: 1140px) {
+  .form input {
+    background-color: rgb(211, 209, 209);
+    border: none;
+    outline: none;
+    width: 50%;
+    height: 60px;
+    border-radius: 7px 0px 0px 7px;
+    font-size: x-large;
+    padding: 1px;
+  }
+  .form {
+    padding-left: 20%;
+  }
+  .form button {
+    border: none;
+    outline: none;
+    width: 11%;
+    height: 62px;
+    background-color: #17b486;
+    border-radius: 0px 7px 7px 0px;
+  }
+  .Todo button,
+  .doneTask button {
+    border: none;
+    outline: none;
+    width: 18%;
+    height: 44px;
+
+    border-radius: 5px;
+    opacity: 1;
+  }
+  .container select {
+    border: none;
+    outline: none;
+    background-color: #7d8afe;
+    width: 13%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin-right: 10%;
+    font-size: large;
+  }
+  button {
+    cursor: pointer;
+  }
+  .Todo div,
+  .doneTask div {
+    width: 40%;
+    display: flex;
+    align-items: center;
+  }
+  .Todo,
+  .doneTask {
+    width: 50%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin-left: 25%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+  }
+}
+@media screen and (max-width: 617px) {
+  .Todo button,
+  .doneTask button {
+    border: none;
+    outline: none;
+    width: 30%;
+    height: 44px;
+    border-radius: 5px;
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 468px) {
+  .Todo button,
+  .doneTask button {
+    border: none;
+    outline: none;
+    width: 30%;
+    height: 44px;
+    border-radius: 5px;
+    opacity: 1;
+  }
+  .Todo,
+  .doneTask {
+    width: 90%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    margin-left: 3%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .form {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    margin-bottom: 50px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  h1 {
+    color: white;
+  }
+  .form input {
+    background-color: rgb(211, 209, 209);
+    border: none;
+    outline: none;
+    width: 70%;
+    height: 50px;
+    border-radius: 7px 0px 0px 7px;
+    font-size: larger;
+    padding: 1px;
+  }
+  .form button {
+    border: none;
+    outline: none;
+    width: 21%;
+    height: 52px;
+    background-color: #17b486;
+    border-radius: 0px 7px 7px 0px;
+  }
+}
