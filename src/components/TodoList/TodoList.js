@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 // STYLE SHEET
 import styles from "./TodoList.module.css";
 // ICON
-import { HiPlus } from 'react-icons/hi'
+import plus from './plus.png'
 //COMPONENTS
 import TodoItem from "./TodoItem";
 const TodoList = () => {
@@ -17,12 +17,16 @@ const TodoList = () => {
         const prevTodo = localStorage.getItem("todo");
         setClientInputsArray(JSON.parse(prevTodo));
     };
-    getLocalTodo();
+    if (JSON.parse(localStorage.getItem("todo")) === null || JSON.parse(localStorage.getItem("todo")) === undefined) {
+      localStorage.setItem("todo", JSON.stringify([]));
+    } else {
+      getLocalTodo();
+    }
   }, []);
   useEffect(() => {
     filterHandler();
     const saveToLocal = () => {
-      if (localStorage.getItem("todo") === null) {
+      if (JSON.parse(localStorage.getItem("todo")) == null) {
         localStorage.setItem("todo", JSON.stringify([]));
       } else {
         localStorage.setItem("todo", JSON.stringify(clientInputsArray));
@@ -72,7 +76,7 @@ const TodoList = () => {
         <form className={styles.form}>
           <input type={"text"} onChange={changeHandler} value={clientInput} />
           <button type="submit" onClick={submitHandler}>
-            <HiPlus />
+            <img src={plus} alt="plus icon" />
           </button>
         </form>
         <select onChange={statusHandler}>

@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 // STYLE SHEET
 import styles from "./TodoList.module.css";
 // ICON
-import { FaTrashAlt } from 'react-icons/fa'
-import { MdDone } from 'react-icons/md'
+import trash from './trash.png'
+import done from './basic-tick.png'
 function TodoItem({ setClientInputsArray, data, clientInputsArray }) {
   // THIS OMITS THE TODO ITEM YOU WANT TO DELETE 
     const deleteHandler = () => {
@@ -26,10 +26,10 @@ function TodoItem({ setClientInputsArray, data, clientInputsArray }) {
         <p>{data.text}</p>
         <div>
           <button className={styles.done} onClick={doneHandler}>
-            <MdDone />
+            <img src={done} alt="" />
           </button>
           <button onClick={deleteHandler} className={styles.delete}>
-            <FaTrashAlt/>
+            <img src={trash} alt="" />
           </button>
         </div>
       </div>

@@ -31,6 +31,7 @@ h1 {
   height: 40px;
   border-radius: 10px;
   padding: 2px 10px;
+  color: black;
 }
 .form input {
   background-color: rgb(211, 209, 209);
@@ -90,6 +91,11 @@ button.done {
   border-radius: 5px;
   opacity: 1;
   margin: 0px 10px;
+  color: black;
+  font-size: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 button {
   cursor: pointer;
@@ -147,6 +153,11 @@ button img {
     height: 62px;
     background-color: #17b486;
     border-radius: 0px 7px 7px 0px;
+    font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
   }
   .Todo button,
   .doneTask button {
@@ -154,7 +165,10 @@ button img {
     outline: none;
     width: 18%;
     height: 44px;
-
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
     opacity: 1;
   }
@@ -201,6 +215,10 @@ button img {
     height: 44px;
     border-radius: 5px;
     opacity: 1;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 468px) {
@@ -212,6 +230,10 @@ button img {
     height: 44px;
     border-radius: 5px;
     opacity: 1;
+  }
+  .container {
+    display: flex;
+    align-items: center;
   }
   .Todo,
   .doneTask {
@@ -227,8 +249,8 @@ button img {
     color: white;
   }
   .form {
-    width: 70%;
-    margin-left: 15%;
+    width: 60%;
+    margin-left: 3%;
     display: flex;
     align-items: center;
     padding: 10px 0px;
@@ -256,5 +278,23 @@ button img {
     height: 52px;
     background-color: #17b486;
     border-radius: 0px 7px 7px 0px;
+    font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  }
+  .container select {
+    border: none;
+    outline: none;
+    background-color: #7d8afe;
+    width: 30%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin-right: 3%;
+    font-size: large;
+    margin-bottom: 50px;
+    margin-top: 20px;
   }
 }
